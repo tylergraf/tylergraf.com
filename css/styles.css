@@ -104,16 +104,16 @@ textarea {width: 100%; }
 .menu-item.photo {background-color: #d94747; }
 .menu-item.photo h2 {margin-top: 33px; margin-left: 23px;}
 .menu-item.photo i {height: 20px; width: 25px; background-position: 0 -45px; margin-left: 6px;}
-.menu-item.film {background-color: #6d94aa;}
+.menu-item.film {background-color: #2673A6;}
 .menu-item.film h2 {margin-top: 54px; margin-left: 0px;}
 .menu-item.film i {height: 20px; width: 25px; background-position: 0 1px; margin-left: 2px;}
-.menu-item.blog {background-color: #4f8f50;}
+.menu-item.blog {background-color: #87B33A;}
 .menu-item.blog h2 {margin-top: 10px; margin-left: -17px;}
 .menu-item.blog i {height: 21px; width: 33px; background-position: 3px -68px; margin-left: -2px;}
-.menu-item.design {background-color: #ceb735;}
+.menu-item.design {background-color: #E3D661;}
 .menu-item.design h2 {margin-top: 8px; margin-left: 7px;}
 .menu-item.design i {height: 20px; width: 25px; background-position: 3px -92px; margin-left: 6px;}
-.menu-item.apps {background-color: #47398f;}
+.menu-item.apps {background-color: #963961;}
 .menu-item.apps h2 {margin-top: 39px; margin-left: -26px;}
 .menu-item.apps i {height: 25px; width: 22px; background-position: 4px -21px;}
 
