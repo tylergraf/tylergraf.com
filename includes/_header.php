@@ -3,7 +3,8 @@
   <title>Tyler Graf | <?php echo $title; ?></title>
   <meta name="description" content="Home">
   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-  
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+  <link rel="icon" href="/css/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="/css/core.css">
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>

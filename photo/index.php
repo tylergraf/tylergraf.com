@@ -32,15 +32,12 @@
     _this.parent().height(parentWidth*2/3);
   }
 
-  $(document).ready(function(){
     var imgs = $('img');
-    imgs.parent().hide();
     imgs.load(function(){
       resizeImg($(this));
-      $(this).parent().fadeIn();
+      $(this).fadeIn();
     });
     $(window).resize(function(){resizeImg($('img'))});
-  });
 
 </script>
 

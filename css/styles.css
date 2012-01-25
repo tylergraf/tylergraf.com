@@ -145,9 +145,9 @@ body.ps-active, body.ps-building, div.ps-active, div.ps-building{  background: r
 
 /* images
 -----------------*/
-.gallery img {width: 100%;}
+.gallery img {width: 100%;display: none;}
 .image-grid {width: 25%;}
-.image-wrapper {margin-right: 10px; overflow: hidden; margin-top: 10px;}
+.image-wrapper {margin-right: 10px; overflow: hidden; margin-top: 10px; }
 .image-wrapper h2 {margin: 0;}
 
 
@@ -160,10 +160,19 @@ body.ps-active, body.ps-building, div.ps-active, div.ps-building{  background: r
 .image-grid {width: 33%;}
 .image-wrapper h2 {font-size: 150%;}
 
+.page-skin-1 .page-header h1 {font-size: 150%; padding-top: 20px; line-height: 80%;}
+.page-skin-ext-photo .page-header h2 {font-size: 46px; }
+.page-nav-skin-header .nav-init {margin-top: 6px; height: 40px; width: 40px; border-radius: 40px;}
+.page-nav-skin-header .nav-init h2 {padding: 15px 8px; font-size: 12px;}
+  
 }
 
 @media screen and (max-width: 640px) {
   .image-grid {width: 50%;}
+
+  .page-skin-1 .page-header h1 {font-size: 100%; padding-top: 15px; line-height: 50%;}
+  .page-skin-ext-photo .page-header h2 {font-size: 30px; }
+  .page {padding: 0 10px;}
 
 }
 
