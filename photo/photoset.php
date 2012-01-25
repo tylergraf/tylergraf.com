@@ -17,7 +17,7 @@
     ?>
     <div class="unit image-grid">
       <div class="image-wrapper">
-        <?php echo '<a href="'.$f->buildPhotoURL($photo,'large').'"><img src="'.$f->buildPhotoURL($photo).'"></a>';?>
+        <?php echo '<a href="'.$f->buildPhotoURL($photo,'large').'"><img src="'.$f->buildPhotoURL($photo,'medium').'"></a>';?>
       </div>
     </div>
     <?php } ?>

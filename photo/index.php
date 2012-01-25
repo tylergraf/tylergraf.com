@@ -16,7 +16,7 @@
     ?>
     <div class="unit image-grid">
       <div class="image-wrapper">
-        <?php echo '<a href="/photo/photoset.php?id='.$photo['id'].'"><img src="http://farm'.$photo["farm"].'.static.flickr.com/'.$photo["server"].'/'.$photo["primary"].'_'.$photo["secret"].'.jpg"></a>';?>
+        <?php echo '<a href="/photo/photoset.php?id='.$photo['id'].'"><img src="http://farm'.$photo["farm"].'.static.flickr.com/'.$photo["server"].'/'.$photo["primary"].'_'.$photo["secret"].'_m.jpg"></a>';?>
         <h2><?php echo '<a href="/photo/photoset.php?id='.$photo['id'].'">'.$photo['title'].'</a>';?></h2>
       </div>
     </div>
