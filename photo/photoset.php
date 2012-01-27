@@ -5,7 +5,7 @@
 
 
 
-  include_once('../flickr/controller.php');
+  include_once('../api/flickr/controller.php');
 
 ?>
 <?php include('../includes/_header.php');?>

@@ -3,7 +3,7 @@
   $page = 'photo';
   $nav = 'header';
 
-  include_once('../flickr/controller.php');
+  include_once('../api/flickr/controller.php');
 
   
 ?>
@@ -32,12 +32,14 @@
     _this.parent().height(parentWidth*2/3);
   }
 
+  $(document).ready(function(){
     var imgs = $('img');
     imgs.load(function(){
       resizeImg($(this));
       $(this).fadeIn();
     });
     $(window).resize(function(){resizeImg($('img'))});
+  });
 
 </script>
 

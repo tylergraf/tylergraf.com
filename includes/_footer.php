@@ -17,16 +17,18 @@
       e.preventDefault();
       window.location = $(this).find('a').attr('href');
     });
-    $('.nav-init').click(function(){
+    function menuAnimate(){
       $('.circles').toggleClass('on');
-      $(this).toggleClass('on');
+      $('.nav-init').toggleClass('on');
       if($('.circles').hasClass('on')){
-        setTimeout("$('.circles').css('z-index','10')",500);
+        setTimeout("$('.circles').css('z-index','1')",500);
       }
       else{
         $('.circles').css('z-index','-1');
       }
-    });
+    }
+    $('.nav-init').click(function(){menuAnimate()});
+    $('.menu-item').click(function(){menuAnimate()});
 
 //    init transitions
     $('.page-header h1').addClass('on');

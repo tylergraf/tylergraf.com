@@ -28,7 +28,7 @@
           <li class="menu-item film"><h2><i></i><span>film</span></h2><a href="/film"></a></li>
           <li class="menu-item photo "><h2><i></i><span>photo</span></h2><a href="/photo"></a></li>
           <li class="menu-item design "><h2><i></i><span>design</span></h2><a href="/design"></a></li>
-          <li class="menu-item apps "><h2><i></i><span>apps</span></h2><a href="/apps"></a></li>
+          <li class="menu-item about "><h2><i></i><span>about</span></h2><a href="/about"></a></li>
           <li class="menu-item blog "><h2><i></i><span>blog</span></h2><a href="/blog"></a></li>
         </ul>
       </div>

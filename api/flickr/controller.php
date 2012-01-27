@@ -19,7 +19,7 @@ $username = 'tylergraf';
 
 require_once("phpFlickr.php");
 $f = new phpFlickr($api_key);
-$f->enableCache("fs", "/image_cache");
+//$f->enableCache("fs", "/image_cache");
 
 $result = $f->people_findByUsername($username);
 $nsid = $result["id"];
