@@ -1,3 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Quattrocento);
+@font-face {
+  font-family: ValenciaBold;
+  src: url('fonts/ValenciaBold.otf');
+}
+@font-face {
+  font-family: LeagueGothicBold;
+  src: url('fonts/League Gothic.otf');
+}
+
 /*----------------------------------------------------
   _        __  _
  |_)  /\  (_  |_
@@ -7,12 +17,14 @@
 -----------------------------------------------------*/
 
 /*html {overflow: auto;overflow: auto;}*/
-body { font:18px/1.62  "Proxima Nova", Helvetica, Arial, sans-serif; color: #444444;}
+body { font:18px/1.62  "Quattrocento","Perpetua Std","Proxima Nova", Helvetica, Arial, sans-serif; color: #444444;}
 
 h1, h2, h3, h4, h5, h6, ul, ol,dl, p,blockquote,pre,address,.field, .mod, table, .tabset  {margin:10px 20px;}
 /*.media .media-block{margin-left:10px}*/
 p{margin-bottom: 18px; }
 
+p a {text-decoration: underline;}
+p a:hover {color: #777;}
 a, a:active, a:visited {color: inherit; text-decoration: none;  }
 a:hover {}
 
@@ -20,12 +32,12 @@ a:hover {}
 ::selection { background:#4089b5; color:#fff; text-shadow: none; }
 a:link { -webkit-tap-highlight-color: #edbb54; }
 
-h1, .h1{font-family: "Proxima Nova Extra Condensed", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:228.5%;  line-height:1.25; font-weight:600; font-style: normal; color:#222;}
-h2, .h2{font-family: "Proxima Nova Extra Condensed", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:140%;    line-height:1.25; font-weight:600; font-style: normal; color:#222;}
-h3, .h3{font-family: "Proxima Nova Extra Condensed", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:171%;    line-height:1.5;  font-weight:600; font-style: normal; color:#222;}
-h4, .h4{font-family: "Proxima Nova Extra Condensed", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:150%;    line-height:1.5;  font-weight:200; font-style: normal; color:#222;}
-h5, .h5{font-family: "Proxima Nova Extra Condensed", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:100%;    line-height:1.5;  font-weight:200; font-style: normal; color:#222;}
-h6, .h6{font-family: "Proxima Nova Extra Condensed", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:100%;    line-height:1.5;  font-weight:200; font-style: normal; color:#222;}
+h1, .h1{font-family: "LeagueGothicBold", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:228.5%;  line-height:1.25; font-weight:600; font-style: normal; color:#222;}
+h2, .h2{font-family: "LeagueGothicBold", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:160%;    line-height:1.25; font-weight:200; font-style: normal; color:#222;}
+h3, .h3{font-family: "LeagueGothicBold", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:150%;    line-height:1.5;  font-weight:600; font-style: normal; color:#222;}
+h4, .h4{font-family: "LeagueGothicBold", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:150%;    line-height:1.5;  font-weight:200; font-style: normal; color:#222;}
+h5, .h5{font-family: "LeagueGothicBold", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:100%;    line-height:1.5;  font-weight:200; font-style: normal; color:#222;}
+h6, .h6{font-family: "LeagueGothicBold", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:100%;    line-height:1.5;  font-weight:200; font-style: normal; color:#222;}
 
 
 input:focus, textarea:focus, select:focus {border: 1px solid #ccc; box-shadow: none;outline: medium none;}
@@ -61,23 +73,27 @@ textarea {width: 100%; }
   -moz-transition: margin-top .8s; /* Firefox 4 */
   -webkit-transition: margin-top .8s; /* Safari and Chrome */
   -o-transition: margin-top .8s; /* Opera */
-  background: #222; color: #fff; float: left; padding: 35px 5px 5px 20px; margin: -80px 0 20px 0px; line-height: 22px;}
+  font-family: "ValenciaBold", "LeagueGothicBold",sans-serif; font-size:333%; background: #222; color: #fff; float: left; padding: 35px 5px 5px 20px; padding: 28px 5px 5px 20px; margin: -80px 0 20px 0px; line-height: 22px; line-height: 34px;}
 .page-skin-1 .page-header h1.on {margin-top: 0;}
 .page-skin-1 .page-header h1 a { color: #fff;}
 
-.page-header h2 { margin-top: 0;font-size: 68px;margin-left: 4px;float: left;}
+.page-header h2 { font-family: "ValenciaBold", "LeagueGothicBold",sans-serif; margin-top: 0;font-size: 90px; line-height: 1; margin-left: 4px;float: left;}
 
 .page-skin-ext-photo .page-header h1 {  background: #d94747;}
 .page-skin-ext-photo .page-header h2 a {color: #D94747;}
 .page-skin-ext-film .page-header h1 {   background: #2673A6;}
 .page-skin-ext-film .page-header h2 a { color: #2673A6;}
+.page-skin-ext-blog .page-header h1 {   background: #4f8f50;}
+.page-skin-ext-blog .page-header h2 a { color: #4f8f50;}
+.page-skin-ext-design .page-header h1 {   background: #E3D661;}
+.page-skin-ext-design .page-header h2 a { color: #E3D661;}
 
 /* menu
 -----------------*/
 .page-nav-skin-header {float: right; position: relative;}
 .page-nav-skin-header .nav-init {cursor: pointer; height: 60px; width: 60px; border-radius: 60px; background-color: #222; margin: 10px 60px 0 0;}
 .page-nav-skin-header .nav-init:hover {cursor: pointer;background-color: #333;}
-.page-nav-skin-header .nav-init h2 {color: #fff; font-size: 22px; margin: 0 auto; padding: 18px 10px;}
+.page-nav-skin-header .nav-init h2 {color: #fff; font-size: 22px; margin: 0 auto; padding: 22px 11px;}
 
 .page-nav-skin-home {position: absolute; display: none;}
 .page-nav-skin-home .nav-init {
@@ -93,8 +109,8 @@ textarea {width: 100%; }
   -moz-transition: padding-top .8s;
   -webkit-transition: padding-top .8s;
   -o-transition: padding-top .8s;
-  font-size: 40px; color: #fff; width: 100%; text-align: center; margin: 0; padding-top: 50px;}
-.page-nav-skin-home .nav-init.on h2 {padding-top: 80px;}
+  font-size: 40px; color: #fff; width: 100%; text-align: center; margin: 0; padding-top: 60px; }
+.page-nav-skin-home .nav-init.on h2 {padding-top: 85px;}
 
 .menu-item {background: #999; border-radius: 60px; height: 60px; width: 60px; list-style: none; cursor: pointer;}
 .page-nav-skin-header .menu-item {height: 40px; width: 40px; border-radius: 40px;}
@@ -162,6 +178,13 @@ ul.circles.on li.photo h2 {  -moz-transform: rotate(-288deg);                -ms
 body.ps-active, body.ps-building, div.ps-active, div.ps-building{  background: rgba(0, 0, 0, 0.8);	overflow: hidden;}body.ps-active *, div.ps-active *{	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0);	display: none;}body.ps-active *:focus, div.ps-active *:focus{	outline: 0;}/* Document overlay */div.ps-document-overlay{	background: rgba(0, 0, 0, 0.8);}/* UILayer */div.ps-uilayer {  background: rgba(0, 0, 0, 0.8);  cursor: pointer;}/* Zoom/pan/rotate layer */div.ps-zoom-pan-rotate{	background: #000;}div.ps-zoom-pan-rotate *  { display: block; }/* Carousel */div.ps-carousel-item-loading{	background: url(images/loader.gif) no-repeat center center;}div.ps-carousel-item-error{	background: url(images/error.gif) no-repeat center center;}/* Caption */div.ps-caption{	background: #000000;	background: -moz-linear-gradient(top, #303130 0%, #000101 100%);	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#303130), color-stop(100%,#000101));	border-bottom: 1px solid #42403f;	color: #ffffff;	font-size: 13px;	font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif;	text-align: center;}div.ps-caption *  { display: inline; }div.ps-caption-bottom{	border-top: 1px solid #42403f;	border-bottom: none;	min-height: 44px;}div.ps-caption-content{	padding: 13px;	display: block;}/* Toolbar */div.ps-toolbar{	background: #000000;	background: -moz-linear-gradient(top, #303130 0%, #000101 100%);	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#303130), color-stop(100%,#000101));	border-top: 1px solid #42403f;	color: #ffffff;	font-size: 13px;	font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif;	text-align: center;	height: 44px;	display: table;	table-layout: fixed;}div.ps-toolbar * {	display: block;}div.ps-toolbar-top{	border-bottom: 1px solid #42403f;	border-top: none;}div.ps-toolbar-close, div.ps-toolbar-previous, div.ps-toolbar-next, div.ps-toolbar-play{	cursor: pointer;	display: table-cell;}div.ps-toolbar div div.ps-toolbar-content{	width: 44px;	height: 44px;	margin: 0 auto 0;	background-image: url(images/swipe-icons.png);	background-repeat: no-repeat;}div.ps-toolbar-close div.ps-toolbar-content{	background-position: 0 0;}div.ps-toolbar-previous div.ps-toolbar-content{	background-position: -44px 0;}div.ps-toolbar-previous-disabled div.ps-toolbar-content{	background-position: -44px -44px;}div.ps-toolbar-next div.ps-toolbar-content{	background-position: -132px 0;}div.ps-toolbar-next-disabled div.ps-toolbar-content{	background-position: -132px -44px;}div.ps-toolbar-play div.ps-toolbar-content{	background-position: -88px 0;}/* Hi-res display */@media only screen and (-webkit-min-device-pixel-ratio: 1.5),       only screen and (min--moz-device-pixel-ratio: 1.5),       only screen and (min-resolution: 240dpi){	div.ps-toolbar div div.ps-toolbar-content	{		-moz-background-size: 176px 88px;		-o-background-size: 176px 88px;		-webkit-background-size: 176px 88px;		background-size: 176px 88px;		background-image: url(images/icons@2x.png);	}}
 
 
+/* blog
+-----------------*/
+.blog-wrapper {max-width: 640px;}
+.blog-wrapper img {width: 100%; height: auto;}
+.photoset { margin-right: 10px; margin-bottom: 10px;}
+.photoset img {width: 100%;}
+
 /* images
 -----------------*/
 .gallery {z-index: -10;}
@@ -193,6 +216,7 @@ body { font-size: 14px;}
 
 @media screen and (max-width: 640px) {
   .image-grid {width: 50%;}
+  .blog-wrapper img {width: 100%; height: auto;}
 
   .page-skin-1 .page-header h1 {font-size: 100%; padding-top: 15px; line-height: 50%;}
   .page-header h2 {font-size: 30px; }
@@ -208,3 +232,12 @@ body { font-size: 14px;}
 .mod-skin-film .mod-body p {margin: 0;}
 .mod-skin-film .mod-body .film-plays {text-transform: uppercase; font-weight: 600; margin-left: 10px;}
 .mod-skin-film .mod-body .feature-film {margin-bottom: 10px;}
+
+.mod-skin-blog-post {border-bottom: 1px solid #ccc; padding-bottom: 40px; margin-top: 40px;}
+.mod-skin-blog-post .mod-header * {margin-left: 0; margin-right: 0;}
+.mod-skin-blog-post .mod-body * {margin-left: 0; margin-right: 0;}
+.mod-skin-blog-post .mod-body * .specs {font-size: 14px;}
+.mod-skin-blog-post .mod-body ol {margin-left: 22px;}
+.mod-skin-blog-post .mod-body embed {margin-left: 0; margin-right: 0; width: 100%;}
+.mod-skin-blog-post .mod-footer * {margin-left: 0; margin-right: 0;}
+.mod-skin-blog-post .mod-footer .tag {margin-right: 10px; }

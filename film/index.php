@@ -11,16 +11,18 @@
 <section class="line">
   <div class="gallery">
 
+<!--    --><?php //print_r($videos); ?>
 
     <?php foreach ($videos as $video){
-    ?>
-    <div class="unit image-grid">
-      <div class="image-wrapper">
-        <a href="/film/film.php?id=<?php echo $video->id ?>"><img src="<?php echo $video->thumbnails->thumbnail[2]->_content;?>"></a>
-        <h2><a href="/film/film.php?id=<?php echo $video->id ?>"><?php echo $video->title ?></a></h2>
+//    print_r($video).'<br><br>';
+      ?>
+      <div class="unit image-grid">
+        <div class="image-wrapper">
+          <a href="/film/film.php?id=<?php echo $video->id ?>"><img src="<?php echo $video->thumbnails->thumbnail[2]->_content;?>"></a>
+          <h2><a href="/film/film.php?id=<?php echo $video->id ?>"><?php echo $video->title ?></a></h2>
+        </div>
       </div>
-    </div>
-    <?php } ?>
+      <?php } ?>
 
   </div>
 </section>

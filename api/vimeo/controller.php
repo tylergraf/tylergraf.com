@@ -17,33 +17,34 @@ else{
 
 //    print_r($videos->);
 
-    function displayTree($var) {
-     $newline = "\n";
-     foreach($var as $key => $value) {
-         if (is_array($value) || is_object($value)) {
-             $value = $newline . "<ul>" . displayTree($value) . "</ul>";
-         }
+function displayTree($var) {
+    $newline = "\n";
+    foreach($var as $key => $value) {
+        if (is_array($value) || is_object($value)) {
+            $value = $newline . "<ul>" . displayTree($value) . "</ul>";
+        }
 
-         if (is_array($var)) {
-             if (!stripos($value, "<li class=")) {
-                $output .= "<li class=\"file\">" . $value . "</li>" . $newline;
-             }
-             else {
-                $output .= $value . $newline;
-             }
-
-         }
-         else { // is_object
+        if (is_array($var)) {
             if (!stripos($value, "<li class=")) {
-               $value = "<ul><li class=\"file\">" . $value . "</li></ul>" . $newline;
+               $output .= "<li class=\"file\">" . $value . "</li>" . $newline;
+            }
+            else {
+               $output .= $value . $newline;
             }
 
-            $output .= "<li class=\"folder\">" . $key . $value . "</li>" . $newline;
-         }
+        }
+        else { // is_object
+           if (!stripos($value, "<li class=")) {
+              $value = "<ul><li class=\"file\">" . $value . "</li></ul>" . $newline;
+           }
 
-     }
+           $output .= "<li class=\"folder\">" . $key . $value . "</li>" . $newline;
+        }
 
-     return $output;
-}
+    }
+
+    return $output;
+ }
+
 
 ?>

@@ -15,9 +15,10 @@ if (empty($_SESSION['access_token']) || empty($_SESSION['access_token']['oauth_t
 }
 /* Get user access tokens out of the session. */
 $access_token = $_SESSION['access_token'];
-
+$oauth_token='N0Te0LjQdiw2M1j3tPvQJCl97ueQmlhMldEZei6QtnE';
+$oauth_verifier='blfaOZ3Ymk88yFqoXY8JxZmb1vQF17i0sPBVeZYg';
 /* Create a TwitterOauth object with consumer/user tokens. */
-$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oauth_token'], $access_token['oauth_token_secret']);
+$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $oauth_token, $oauth_verifier);
 
 /* If method is set change API call made. Test is called by default. */
 $content = $connection->get('account/rate_limit_status');
@@ -26,7 +27,7 @@ echo "Current API hits remaining: {$content->remaining_hits}.";
 /* Get logged in user to help with tests. */
 $user = $connection->get('account/verify_credentials');
 
-$active = FALSE;
+$active = TRUE;
 if (empty($active) || empty($_GET['confirmed']) || $_GET['confirmed'] !== 'TRUE') {
   echo '<h1>Warning! This page will make many requests to Twitter.</h1>';
   echo '<h3>Performing these test might max out your rate limit.</h3>';

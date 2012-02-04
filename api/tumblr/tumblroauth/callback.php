@@ -89,9 +89,9 @@ $tum_oauth = new TumblrOAuth($consumer_key, $consumer_secret, $token, $token_sec
 
 // Make an API call with the TumblrOAuth instance.  There's also a post and delete method too.
 //$userinfo = $tum_oauth->get('user/info');
-//$userinfo = $tum_oauth->get('blog/solenoled.tumblr.com/text','notes_info');
-$a = array('api_key',$consumer_key);
-$userinfo = $tum_oauth->get('blog/solenoled.tumblr.com/posts/',$a);
+$userinfo = $tum_oauth->get('blog/solenoled.tumblr.com/text','notes_info');
+//$a = array('api_key',$consumer_key);
+//$userinfo = $tum_oauth->get('blog/solenoled.tumblr.com/posts/',$a);
 
 // You don't actuall have to pass a full URL,  TukmblrOAuth will complete the URL for you.
 // This will also work: $userinfo = $tum_oauth->get('user/info');
