@@ -32,9 +32,9 @@ a:hover {}
 ::selection { background:#4089b5; color:#fff; text-shadow: none; }
 a:link { -webkit-tap-highlight-color: #edbb54; }
 
-h1, .h1{font-family: "LeagueGothicBold", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:228.5%;  line-height:1.25; font-weight:600; font-style: normal; color:#222;}
+h1, .h1{font-family: "LeagueGothicBold", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:228.5%;  line-height:1.25; font-weight:500; font-style: normal; color:#222;}
 h2, .h2{font-family: "LeagueGothicBold", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:160%;    line-height:1.25; font-weight:200; font-style: normal; color:#222;}
-h3, .h3{font-family: "LeagueGothicBold", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:150%;    line-height:1.5;  font-weight:600; font-style: normal; color:#222;}
+h3, .h3{font-family: "LeagueGothicBold", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:150%;    line-height:1.5;  font-weight:500; font-style: normal; color:#222;}
 h4, .h4{font-family: "LeagueGothicBold", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:150%;    line-height:1.5;  font-weight:200; font-style: normal; color:#222;}
 h5, .h5{font-family: "LeagueGothicBold", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:100%;    line-height:1.5;  font-weight:200; font-style: normal; color:#222;}
 h6, .h6{font-family: "LeagueGothicBold", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size:100%;    line-height:1.5;  font-weight:200; font-style: normal; color:#222;}
@@ -87,6 +87,9 @@ textarea {width: 100%; }
 .page-skin-ext-blog .page-header h2 a { color: #4f8f50;}
 .page-skin-ext-design .page-header h1 {   background: #E3D661;}
 .page-skin-ext-design .page-header h2 a { color: #E3D661;}
+.page-skin-ext-about .page-header h1 {   background: #963961;}
+.page-skin-ext-about .page-header h2 a { color: #963961;}
+
 
 /* menu
 -----------------*/
@@ -195,6 +198,13 @@ body.ps-active, body.ps-building, div.ps-active, div.ps-building{  background: r
 
 
 
+/* about page
+-----------------*/
+.page-skin-ext-about img.main-image {width:100%; margin-top: 15px;}
+.ext-italic {font-style: oblique;}
+.media .media-body p {margin: 0 10px;}
+.media-skin-about-quote img {width: 140px;}
+
 
 /*media queries*/
 @media all and (max-width: 1000px) {
@@ -221,7 +231,9 @@ body { font-size: 14px;}
   .page-skin-1 .page-header h1 {font-size: 100%; padding-top: 15px; line-height: 50%;}
   .page-header h2 {font-size: 30px; }
   .page {padding: 0 10px;}
-
+  .page-skin-ext-about .size1of2 {width:100%;}
+  .page-skin-ext-about p {margin-left: 0; margin-right: 0;}
+  .media-skin-about-quote img {width: 80px;}
 }
 
 /* mods
@@ -241,3 +253,4 @@ body { font-size: 14px;}
 .mod-skin-blog-post .mod-body embed {margin-left: 0; margin-right: 0; width: 100%;}
 .mod-skin-blog-post .mod-footer * {margin-left: 0; margin-right: 0;}
 .mod-skin-blog-post .mod-footer .tag {margin-right: 10px; }
+
