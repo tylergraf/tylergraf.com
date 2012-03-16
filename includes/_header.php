@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
 <head>
   <title>Tyler Graf | <?php echo $title; ?></title>
