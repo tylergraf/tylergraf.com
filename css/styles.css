@@ -219,12 +219,19 @@ body.ps-active, body.ps-building, div.ps-active, div.ps-building{  background: r
 
 .page-skin-1 .page-header h1 {font-size: 250%; padding-top: 20px; line-height: 65%;}
 .page-header h2 {font-size: 62px; }
-.page-nav-skin-header .nav-init {margin-top: 6px; height: 40px; width: 40px; border-radius: 40px;}
-.page-nav-skin-header .nav-init h2 {padding: 15px 8px; font-size: 12px;}
 .page-nav-skin-header .menu-item {border-radius: 30px; height: 30px; width: 30px;}
 .page-nav-skin-header .circles.on .menu-item {border-radius: 40px; height: 40px; width: 40px;}
 .menu-skin-header {width: 250px;}
 body { font-size: 14px;}
+
+  .page-nav-skin-header .menu-skin-header .menu-item h2 {margin-top: 5px;}
+  .menu-skin-header .menu-item h2 i {background-size: 210px auto;}
+  .menu-skin-header .menu-item.film h2 i {background-position: -1px 0; height: 15px; margin-top: 4px; }
+  .menu-skin-header .menu-item.photo h2 i {background-position: -2px -34px; height: 14px; margin-top: 3px; margin-left: 2px; }
+  .menu-skin-header .menu-item.design h2 i {background-position: 2px -71px; height: 14px; margin-top: 5px; }
+  .menu-skin-header .menu-item.about h2 i {background-position: -1px -84px; height: 26px; margin-top: 1px; margin-left: 4px; }
+  .menu-skin-header .menu-item.blog h2 i {background-position: 2px -50px; height: 19px; margin-top: 1px; }
+
 
 }
 
@@ -243,6 +250,14 @@ body { font-size: 14px;}
   .size2of3 {width: 62%}
   .menu-skin-header {margin-top: 10px; width: 174px;}
   .page-nav-skin-header .menu-item {border-radius: 25px; height: 25px; width: 25px; margin-right: 10px;}
+
+  .page-nav-skin-header .menu-skin-header .menu-item h2 {margin-top: 5px;}
+  .menu-skin-header .menu-item h2 i {background-size: 180px auto;}
+  .menu-skin-header .menu-item.film h2 i {background-position: -2px 0; height: 11px; margin-top: 2px; }
+  .menu-skin-header .menu-item.photo h2 i {background-position: -2px -29px; height: 14px; margin-top: 1px; margin-left: 2px; }
+  .menu-skin-header .menu-item.design h2 i {background-position: 0 -59px; height: 14px; margin-top: 1px; }
+  .menu-skin-header .menu-item.about h2 i {background-position: -2px -73px; height: 26px; margin-top: 1px; margin-left: 4px; }
+  .menu-skin-header .menu-item.blog h2 i {background-position: 2px -44px; height: 14px; margin-top: 1px; }
 
 }
 
