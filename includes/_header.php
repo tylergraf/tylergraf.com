@@ -9,7 +9,6 @@
   <link rel="stylesheet" type="text/css" href="/css/core.css">
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
 </head>
 <body>
 <div class="page page-skin-1 page-skin-ext-<?php echo $page; ?>">
