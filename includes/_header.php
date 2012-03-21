@@ -16,12 +16,28 @@
   <div class="line">
     <header>
       <div class="page-header">
+        <div class="unit size1of3">
         <h1><a href="/">Tyler Graf</a></h1>
 
         <?php if ($page != 'home') echo '<h2><a href="/'.$page.'">'.$page.'</a></h2>' ?>
+        </div>
+        <div class="unit size2of3">
+        <?php if($page != 'home'){ ?>
+          <nav class="nav page-nav-skin-<?php echo $nav; ?>">
+            <ul class="menu menu-skin-header">
+              <li class="menu-item film"><h2><i></i><span>film</span></h2><a href="/film"></a></li>
+              <li class="menu-item photo "><h2><i></i><span>photo</span></h2><a href="/photo"></a></li>
+              <li class="menu-item design "><h2><i></i><span>design</span></h2><a href="/design"></a></li>
+              <li class="menu-item about "><h2><i></i><span>about</span></h2><a href="/about"></a></li>
+              <li class="menu-item blog "><h2><i></i><span>blog</span></h2><a href="/blog"></a></li>
+            </ul>
+          </nav>
+          <?php } ?>
+
+        </div>
       </div>
     </header>
-
+    <?php if($page == 'home'){ ?>
     <nav class="nav page-nav-skin-<?php echo $nav; ?>">
       <div class="nav-init"><h2>stuff</h2></div>
       <div class="holder">
@@ -34,6 +50,8 @@
         </ul>
       </div>
     </nav>
+  <?php } ?>
+
   </div>
 
 

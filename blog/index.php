@@ -22,10 +22,15 @@
 <!--          <h2>--><?php //echo ($post['title'] ? $post['title'] : 'Reblog') ?><!--</h2>-->
 
             <?php
+//            print_r($post);
+//            if($post['reblog_key']){
+//              echo '<h2>reblog: '.$post['title'].'</h2>';
+//            }
             if($post['type'] == 'text'){
               echo '<h2>'.$post['title'].'</h2>';
               echo '<p>'. date("n.j.Y", $post['timestamp']).'</p>';
             }
+
             elseif ($post['type'] == 'photo'){
               $photoCount = count($post['photos']);
               if ($photoCount > 1) {
@@ -38,16 +43,24 @@
                   echo '<img src="' . $post['photos'][$p]['alt_sizes'][1]['url'] . '">';
                   echo '</div></div>';
                 }
-              }
-              else{
-                echo '<img src="' . $post['photos'][0]['alt_sizes'][0]['url'] . '">';
-              }
+            }
+            else{
+              echo '<h2>photo</h2>';
+              echo '<p>'. date("n.j.Y", $post['timestamp']).'</p>';
+              echo '<img src="' . $post['photos'][0]['alt_sizes'][0]['url'] . '">';
+            }
 
-              echo $post['title'];
+            echo $post['title'];
 
             }
             elseif ($post['type'] == 'quote'){
               echo '<h2>Quote</h2>';
+              echo '<p>'. date("n.j.Y", $post['timestamp']).'</p>';
+            }
+            elseif ($post['type'] == 'link'){
+              echo '<h2>link: '.$post['title'].'</h2>';
+              echo '<p>'. date("n.j.Y", $post['timestamp']).'</p>';
+              echo '<p><a href="'.$post['url'].'">'.$post['url'].'</a></p>';
             }
 
 
@@ -66,10 +79,14 @@
             elseif($post['type'] == 'link'){
               echo $post['description'];
             }
+            else {
+              echo '<h2>video</h2>';
+              echo $post['player'][2]['embed_code'];
+              echo "<p>".$post['caption']."</p>";
+            }
           ?>
 
 
-          <p><?php echo ($post['body'] ? $post['body'] : $post['caption']) ?></p>
         </div>
         <div class="mod-footer">
 
@@ -101,7 +118,7 @@
       $(this).fadeIn();
     });
     function resizeIframe(_this){
-      var pageWidth = $('.blog-wrapper').width();
+      var pageWidth = $('.blog-wrapper').width()-40;
       _this.width(pageWidth);
       _this.height(pageWidth/(16/9));
 

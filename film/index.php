@@ -30,7 +30,7 @@
 <script type="text/javascript">
   function resizeImg(_this){
     var parentWidth = _this.parents('.image-wrapper').width();
-    _this.parents('.image-wrapper').height(parentWidth/(16/11));
+    _this.parents('.image-wrapper').height(parentWidth/(16/12));
   }
 
     var imgs = $('img');
