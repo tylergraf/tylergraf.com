@@ -8,9 +8,10 @@
   <link rel="icon" href="/css/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="/css/core.css">
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
-  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
   <script type="text/javascript" src="http://use.typekit.com/hwz2jtd.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script
 </head>
 <body>
 <div class="page page-skin-1 page-skin-ext-<?php echo $page; ?>">
