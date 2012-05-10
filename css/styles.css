@@ -58,6 +58,7 @@ textarea {width: 100%; }
 -----------------*/
 .page {padding: 0 40px; height: auto;}
 .page-skin-1 {max-width: 1200px; margin: 0 auto;}
+.page-skin-1 .page-header {height: 55px;}
 .page-skin-1 .page-header h1 {
   transition: margin-top .8s;
   -moz-transition: margin-top .8s; /* Firefox 4 */
@@ -90,20 +91,24 @@ textarea {width: 100%; }
 
 .page-nav-skin-home {position: absolute; display: none;}
 .page-nav-skin-home .nav-init {
-  transition: margin-left .8s, margin-top .8s, width .8s, height .8s, transform .8s;
-  -moz-transition: margin-left .8s, margin-top .8s, width .8s, height .8s, -moz-transform .8s;
-  -webkit-transition: margin-left .8s, margin-top .8s, width .8s, height .8s, -webkit-transform .8s;
-  -o-transition: margin-left .8s, margin-top .8s, width .8s, height .8s,-o-transform .8s;
+  /*transition: margin-left .8s, margin-top .8s, width .8s, height .8s, transform .8s;*/
+  /*-moz-transition: margin-left .8s, margin-top .8s, width .8s, height .8s, -moz-transform .8s;*/
+  /*-webkit-transition: margin-left .8s, margin-top .8s, width .8s, height .8s, -webkit-transform .8s;*/
+  /*-o-transition: margin-left .8s, margin-top .8s, width .8s, height .8s,-o-transform .8s;*/
   cursor: pointer; position: relative; margin: 0 auto; height: 150px; width: 150px; border-radius: 150px; background-color: #222; }
-.page-nav-skin-home .nav-init.on {margin-left: -25px; margin-top: -25px; width: 200px; height: 200px;}
+.page-nav-skin-home .nav-init.on {
+  /*margin-left: -25px; margin-top: -25px; width: 200px; height: 200px;*/
+}
 .page-nav-skin-home .nav-init:hover {cursor: pointer;background-color: #333;}
 .page-nav-skin-home .nav-init h2 {
-  transition: padding-top .8s;
-  -moz-transition: padding-top .8s;
-  -webkit-transition: padding-top .8s;
-  -o-transition: padding-top .8s;
+  /*transition: padding-top .8s;*/
+  /*-moz-transition: padding-top .8s;*/
+  /*-webkit-transition: padding-top .8s;*/
+  /*-o-transition: padding-top .8s;*/
   font-size: 40px; color: #fff; width: 100%; text-align: center; margin: 0; padding-top: 60px; }
-.page-nav-skin-home .nav-init.on h2 {padding-top: 85px;}
+.page-nav-skin-home .nav-init.on h2 {
+  /*padding-top: 85px;*/
+}
 
 .menu-item {background: #999; border-radius: 60px; height: 60px; width: 60px; list-style: none; cursor: pointer;}
 .page-nav-skin-header .menu-item {height: 40px; width: 40px; border-radius: 40px;}
